@@ -1,3 +1,6 @@
+# Copyright (C) Rollingcheese22
+
+
 from enum import Enum
 import re
 
@@ -30,10 +33,10 @@ class KWords(Enum):
     fasten = "FAST_B"
 
 class Symbol(Enum):
-
+                         #Assignment Operators
     WALRUS_OP = ":="
     ASSIGN_SYM = "="
-
+                          #Comparison Operators
     COMPARE_SYM = "=="
 class Identity:
     pass
@@ -53,14 +56,14 @@ def error_handler(err_line, err, err_position):
         print("\nUnclosedParentheses: Unclosed Parenthesis at position:", err_position, "Line", err_line)
     elif err == "InvalidSyntax":
         print("=" * 29, "≠", "ERROR", "≠", "=" * 29)
-        print("InvalidSyntax: Nuclear cannot comprehend your program.")
+        print("InvalidSyntax: cannot comprehend your program.")
 
 
 
 
 
 
-with open("counting.txt", "r") as nuclear:
+with open("your.txt", "r") as nuclear:
     while line := nuclear.readline():
         current_line += 1
         temp_collect[current_line] = line + "EOL"
