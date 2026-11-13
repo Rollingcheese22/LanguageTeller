@@ -5,10 +5,6 @@ I hope you enjoy my "mini" language.
 
 I'm very much looking foward to contributers I really want to see this project grow.
 
-Here's how to use my language.
-use the keyword "let" when declaring a variable here's one example.
-let Variable = str(Hello World)
-
 I soon plan to add more features with the time I have.
 
 Features I'm adding next:
